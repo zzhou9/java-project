@@ -1,0 +1,7 @@
+runningInformationDatabase:
+  image: mysql
+  ports:
+    - "3308:3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=root
+
