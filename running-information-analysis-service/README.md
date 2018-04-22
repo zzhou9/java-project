@@ -11,12 +11,6 @@ This is a service designed in **Spring Boot/Data** to provide **REST** APIs for 
 ## Features
 - Each RunningInformation includes runningId, latitude, longitude, runningDistance, totalRunningTime,heartRate, timestamp and userInfo.
 
-### Query
-
-Query can be done by sending GET request to http://localhost:8080/running_info/{searching_id}?page=0&size=10
-
-The size parameter can be ignored and the default value is 2.
-
 Then you will get the response in JSON like below.
 ```json
 {
@@ -32,20 +26,18 @@ Then you will get the response in JSON like below.
       "address": "Success Street, New York, NY 10001"
     }
 
+### Requirements
 
+### Java Platform (JDK) 8
+### Apache Maven
 
-## Requirements
-
-- Java Platform (JDK) 8
-- Apache Maven
-
-## 1.Getting started
+### 1. Getting started
 
 ### Start MySQL on Docker
-```bash
+
 docker-compose up -d
-```
-```
+
+
 ### 2. Login MySQL database
 ```
 mysql -u root -p
