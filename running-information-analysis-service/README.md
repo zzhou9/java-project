@@ -25,8 +25,8 @@ Then you will get the response in JSON like below.
       "username": "chandler0",
       "address": "Success Street, New York, NY 10001"
     }
-
-### start MYSQL Docker
+```
+start Mysql Docker
 ```
 docker-compose up -d
 ```
@@ -55,10 +55,9 @@ java -jar target/running-information-analysis-service-1.0.0.BUILD-SNAPSHOT
 ### Explore by Postman
 
 ## API Overview
-> Check API References for detailed information
+Check API References more detailed information
 
-| Method | URL | Description | 
-|--------|--------|-------------|
+ Method  URL  Description 
 | POST | /running | upload a list of runningInfo | 
 | DELETE | running/purge | delete all runningInfo | 
 | DELETE | running/delete/{runningId} | delete one runningInfo by runningId |
