@@ -26,22 +26,20 @@ Then you will get the response in JSON like below.
       "address": "Success Street, New York, NY 10001"
     }
 
-### Requirements
+Requirements
+Java Platform (JDK) 8
+Apache Maven
 
-### Java Platform (JDK) 8
-### Apache Maven
+1.Getting started
 
-### 1. Getting started
-
-### Start MySQL on Docker
+Start MySQL on Docker
 
 docker-compose up -d
 
+2. Login MySQL database
 
-### 2. Login MySQL database
-```
 mysql -u root -p
-```
+
 Create table RUNNING_ANALYSIS in database runningInfoAnalysis_db if not exist
 ```
 mysql> SHOW DATABASES;
